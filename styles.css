@@ -1,0 +1,216 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+header nav .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+header nav .nav-links .cta {
+    padding: 0.5rem 1rem;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 5px;
+}
+.nav-links .cta:hover {
+    background-color: #554cbf;
+}
+
+header h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header .highlight {
+    color: #6c63ff;
+}
+
+.billing-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.billing-toggle span {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #6c63ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.currency-selector {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.currency-selector label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.currency-selector select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.9s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card h2 {
+    margin: 0 0 1rem;
+    color: #6c63ff;
+}
+
+.card p.price {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: #555;
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+.card button {
+    padding: 0.5rem 1rem;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #554cbf;
+}
+
+.limited-offer {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.limited-offer p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.limited-offer a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    color: #333;
+}

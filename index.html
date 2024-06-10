@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Plan</a>
+        <div class="nav-links">
+          <a href="#">Log in</a>
+          <a href="#" class="cta">Get started now</a>
+        </div>
+      </nav>
+      <h1>Pricing plans</h1>
+      <p>
+        First 30 days absolutely <span class="highlight">free</span> for any
+        plan, no credit card required to get started.
+      </p>
+    </header>
+
+    <div class="billing-toggle" id="lab">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle" />
+        <span class="slider"></span>
+      </label>
+      <span>Yearly</span>
+    </div>
+
+    <div class="currency-selector">
+      <label for="currency">Currency: </label>
+      <select id="currency">
+        <option value="USD" id="usd" selected>USD</option>
+        <option value="EUR" id="eur">EUR</option>
+        <option value="GBP" id="gbp">GBP</option>
+        <option value="INR" id="inr">INR</option>
+      </select>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="card">
+        <h2>Freelance</h2>
+        <p class="price" id="basic">$<span id="num">5</span></p>
+        <ul>
+          <li>5GB file storage</li>
+          <li>File manager</li>
+          <li>Upgrade any time</li>
+        </ul>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h2>Teams</h2>
+        <p class="price" id="inter">$<span id="num">20</span></p>
+        <ul>
+          <li>20GB file storage</li>
+          <li>Collaboration mode</li>
+          <li>Up to 10 users</li>
+          <li>Upgrade any time</li>
+        </ul>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <h2>Enterprise</h2>
+        <p class="price" id="ulti">$<span id="num">80</span></p>
+        <ul>
+          <li>Unlimited storage</li>
+          <li>Admin dashboard</li>
+          <li>Unlimited users</li>
+          <li>All features</li>
+        </ul>
+        <button>Select</button>
+      </div>
+    </div>
+
+    <div class="limited-offer">
+      <p>
+        Limited offer: Save 20% on annual plans. Get the coupon
+        <a href="#">here</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2024 Plan</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
